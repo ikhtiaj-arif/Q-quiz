@@ -8,7 +8,7 @@ const Topics = () => {
     const tpoics = useLoaderData()
     const loadedTopics =  tpoics.data;
     return (
-        <div className='w-3/4 grid grid-cols-2  gap-8'>
+        <div className='w-3/4 mx-auto md:grid grid-cols-2  gap-8'>
             {
                 loadedTopics.map(topic => <EachTopic
                     key={topic.id}
