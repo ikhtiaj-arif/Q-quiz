@@ -11,20 +11,20 @@ const Header = () => {
                <div className='text-2xl font-bold'>
                     <NavLink to='/'>O-Quiz</NavLink>
                </div>
-                <ul className={`active bg-white p-3 md:flex items-center border w-screen md:w-auto space-l-8 space-y-2 md:space-y-0 md:space-x-8 absolute md:static ${open ? 'top-10': 'top-[-200px]'}`}>
+                <ul className={`active bg-white p-3 md:flex items-center w-screen md:w-auto space-l-8 space-y-2 md:space-y-0 md:space-x-8 absolute md:static ${open ? 'top-10': 'top-[-200px]'}`}>
                     <li>
-                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600'
+                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-700 text-lg '
                      to='/topics'
                      >topics</NavLink>
                     </li>
                   
                     <li>
-                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600'
+                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-700 text-lg'
                      to='/statistics'
                      >statistics</NavLink>
                     </li>
                     <li>
-                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600'
+                    <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-700 text-lg'
                      to='/blogs'
                      >blogs</NavLink>
                     </li>
