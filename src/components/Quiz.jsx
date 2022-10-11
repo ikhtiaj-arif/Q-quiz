@@ -11,8 +11,8 @@ const Quiz = () => {
     
     return (
         <div className=' w-100 md:w-3/4 lg:w-6/12 mx-4 md:mx-auto'>
-            <h1 className='text-center'>Quiz for {data.name}</h1>
-           <div className='border-2'>
+            <h1 className='text-center p-6 text-4xl font-semibold text-cyan-400'>Quiz for {data.name}</h1>
+           <div className=''>
            {
                 eachQuiz.map((item, idx) => <EachQuiz
                     idx={idx}

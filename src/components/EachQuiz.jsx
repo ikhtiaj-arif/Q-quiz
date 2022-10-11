@@ -30,13 +30,13 @@ const EachQuiz = ({item, idx}) => {
 
     return (
         <div>
-            <div className='border'>
-                 <div className='p-3 flex justify-between'>
-                    <div className='w-10/12'>
-                    <span>Question {idx+1}:</span>
-                     <span className='m-2'>{question}</span>
+            <div className='border-2 rounded-lg shadow-xl m-6 p-6'>
+                 <div className='p-1 flex justify-between'>
+                    <div className='md:flex justify-between w-11/12 py-3'>
+                        <div className='font-semibold text-2xl text-gray-600'>Question {idx+1}:</div>
+                        <div className='mt-2 md:mt-0 md:px-5 font-medium text-lg text-cyan-700'>{question}</div>
                     </div>
-                     <EyeIcon onClick={handleEyeBtn} className="h-6 w-6 text-blue-500 cursor-pointer"/>
+                     <EyeIcon onClick={handleEyeBtn} className="h-6 w-6 text-cyan-600 cursor-pointer"/>
                   </div>
                 <ul className='md:grid grid-cols-2 gap-2'>
                   {
