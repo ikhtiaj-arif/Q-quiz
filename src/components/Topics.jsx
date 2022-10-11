@@ -2,13 +2,13 @@ import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import EachTopic from './EachTopic';
-import Quiz from './Quiz';
+
 
 
 
 const Topics = () => {
-    const tpoics = useLoaderData()
-    const {data} =  tpoics;
+    const topics = useLoaderData()
+    const {data} =  topics;
  
 
     return (
