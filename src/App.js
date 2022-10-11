@@ -4,7 +4,8 @@ import Blogs from './components/Blogs';
 
 import Main from './components/Main';
 import Quiz from './components/Quiz';
-import Statastics from './components/Statastics';
+
+import Statistics from './components/Statistics';
 import Topics from './components/Topics';
 
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <Statastics></Statastics>
+        loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+        element: <Statistics></Statistics>,
       },
       {
         path: '/blogs',

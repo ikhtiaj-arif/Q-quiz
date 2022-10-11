@@ -1,13 +1,12 @@
 import React from 'react';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import { ToastContainer, toast } from 'react-toastify';
-
 import 'react-toastify/dist/ReactToastify.css';
-
 import Options from './Options';
 
+
 const EachQuiz = ({item, idx}) => {
-    // console.log(item)
+    console.log(item)
     const {correctAnswer, question, options, id} = item;
 
    

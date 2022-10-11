@@ -1,8 +1,8 @@
-import { isDisabled } from '@testing-library/user-event/dist/utils';
+
 import React from 'react';
 
 const Options = ({option, handleOptionClick}) => {
-    console.log(option)
+    // console.log(option)
     return (
         <div>
              <div class="form-check">

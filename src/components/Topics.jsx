@@ -9,7 +9,7 @@ import EachTopic from './EachTopic';
 const Topics = () => {
     const topics = useLoaderData()
     const {data} =  topics;
- 
+   
 
     return (
         <div className='w-3/4 mx-auto md:grid grid-cols-2  gap-8'>
