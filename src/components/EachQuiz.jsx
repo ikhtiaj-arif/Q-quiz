@@ -1,8 +1,26 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
+
+import Options from './Options';
 
 const EachQuiz = ({item, idx}) => {
-    console.log(item)
-    const {correctAnswer, question, options, id} = item
+    // console.log(item)
+    const {correctAnswer, question, options, id} = item;
+
+   
+
+    const handleOptionClick = (option) => {
+        if(option === correctAnswer) {
+            console.log('congrats')
+            toast.success("Correct Answer!", {autoClose: 700})
+        }else{
+            console.log('wrong answer')
+            toast.error("Wrong Answer!", {autoClose: 700})
+        }
+        
+    }
 
 
     return (
@@ -12,26 +30,16 @@ const EachQuiz = ({item, idx}) => {
                     <span>Question {idx+1}:</span>
                      <span>{question}</span>
                      </div>
-                <ul>
-                    <li>
-                        <input type="checkbox" />
-                        <label htmlFor="">{options[0]}</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" />
-                        <label htmlFor="">{options[1]}</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" />
-                        <label htmlFor="">{options[2]}</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" />
-                        <label htmlFor="">{options[3]}</label>
-                    </li>
-                   
-
+                <ul className='md:grid grid-cols-2 gap-2'>
+                  {
+                    options.map((option,idx)=> <Options
+                        key={idx}
+                        option={option}
+                        handleOptionClick={handleOptionClick}
+                    ></Options>)
+                  }
                 </ul>
+                <ToastContainer />
             </div>
 
             
