@@ -1,6 +1,6 @@
 GitHub Link : 
 
-NetLify Link: 
+NetLify Link: https://adorable-palmier-fe90de-ass-09.netlify.app/quiz/5
 
 #1. This site is built using React, React-Router, Some React-Hooks.
 #2. Stastics Chart is made using ReCharts.
