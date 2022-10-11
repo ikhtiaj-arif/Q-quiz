@@ -19,7 +19,7 @@ const Statistics = () => {
     const {data} = stats;
     console.log(data)
     return (
-        <BarChart className='mx-auto my-6'
+        <BarChart className='mx-auto mt-40'
           width={500}
           height={300}
           data={data}

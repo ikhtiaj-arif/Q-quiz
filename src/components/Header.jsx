@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {NavLink} from 'react-router-dom';
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/solid'
-
+import './styles/Header.css'
 
 const Header = () => {
     const [open, setOpen] = useState(false)
@@ -11,7 +11,7 @@ const Header = () => {
                <div className='text-2xl font-bold'>
                     <NavLink to='/'>O-Quiz</NavLink>
                </div>
-                <ul className={`bg-white p-3 md:flex items-center border w-screen md:w-auto space-l-8 space-y-2 md:space-y-0 md:space-x-8 absolute md:static ${open ? 'top-10': 'top-[-200px]'}`}>
+                <ul className={`active bg-white p-3 md:flex items-center border w-screen md:w-auto space-l-8 space-y-2 md:space-y-0 md:space-x-8 absolute md:static ${open ? 'top-10': 'top-[-200px]'}`}>
                     <li>
                     <NavLink className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600'
                      to='/topics'
