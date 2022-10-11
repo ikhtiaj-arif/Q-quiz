@@ -1,6 +1,6 @@
 GitHub Link : https://github.com/programming-hero-web-course2/b6-quiz-crackerz-AnGon777
 
-NetLify Link: https://adorable-palmier-fe90de-ass-09.netlify.app/quiz/5
+NetLify Link: https://adorable-palmier-fe90de-ass-09.netlify.app/
 
 #1. This site is built using React, React-Router, Some React-Hooks.
 #2. Statistics Chart is made using ReCharts.
