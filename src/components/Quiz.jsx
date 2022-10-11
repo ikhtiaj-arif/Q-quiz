@@ -11,7 +11,7 @@ const Quiz = () => {
     const {data} = quizTopic;
    const eachQuiz = data.questions;
     // console.log(eachQuiz);
-    const [finalResults, setFinalResults] = useState(true)
+    const [finalResults, setFinalResults] = useState(false)
     const [score, setScore] = useState(0);
     const [currQuestion, setCurrQuestion] = useState(0);
 
@@ -70,7 +70,7 @@ const resetQuiz = () => {
 
                 
               
-                    <div className='border-2 rounded-lg shadow-xl m-6 p-6'>
+                    <div className='border-2 rounded-lg shadow-xl m-6 px-6 py-14'>
                     <div className='text-center p-3 font-semibold text-2xl text-gray-600'>Question{currQuestion + 1} Out Of {eachQuiz.length}:</div>
                         <div className='p-1 flex justify-between items-center'>
                             
