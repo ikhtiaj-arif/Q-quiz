@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {NavLink} from 'react-router-dom';
 import { Bars3CenterLeftIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import Heading from './Heading';
+
 
 const Header = () => {
     const [open, setOpen] = useState(false)
@@ -37,7 +37,7 @@ const Header = () => {
                }
            </div>
          </nav>
-            <Heading></Heading>
+            
 
             
         
