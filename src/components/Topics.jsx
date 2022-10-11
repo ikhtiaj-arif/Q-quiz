@@ -1,18 +1,23 @@
-import React from 'react';
+import { toBeInTheDocument } from '@testing-library/jest-dom/dist/matchers';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import EachTopic from './EachTopic';
+import Quiz from './Quiz';
 
 
 
 const Topics = () => {
     const tpoics = useLoaderData()
-    const loadedTopics =  tpoics.data;
+    const {data} =  tpoics;
+ 
+
     return (
         <div className='w-3/4 mx-auto md:grid grid-cols-2  gap-8'>
             {
-                loadedTopics.map(topic => <EachTopic
+                data.map(topic => <EachTopic
                     key={topic.id}
                     topic={topic}
+                   
                 ></EachTopic>)
             }
         </div>
